@@ -145,11 +145,6 @@ header {
   margin-right: 10px;
   fill: currentColor;
 }
-
-
-
-
-
 .hero {
   background: var(--secondary-bgd);
   text-align: center;
@@ -218,15 +213,17 @@ background-color: #188CE8;
 }
 .features-bgr {
   display: flex;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
   background: #F5F4FA;
+  width: 270px;
+  height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
 }
 .feature-icon {
   width: 70px;
   height: 70px;
-  margin: 25px 100px;
 }
 .pic-list {
   display: flex;
@@ -297,26 +294,32 @@ background-color: #188CE8;
 .social-links {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
-  margin-right: 32px;
   margin-left: 32px;
-  outline: 2px solid teal;
-
+  margin-right: 32px;
+  margin-bottom: 30px;
 }
 .social-list-item {
-  justify-content: center;
   width: 44px;
   height: 44px;
+  /* border-radius: 50%; */
+  fill: #AFB1B8;
 }
-.social-list-item > .link-to {
-
+.social-list-item > a {
+  display: flex;
+  justify-content: center;align-items: center;
   width: 100%;
   height: 100%;
-  align-content: center;
+  border-radius: 50%;
 }
 .social-link-item {
   width: 20px;
   height: 20px;
+}
+.social-list-item:hover,
+.social-list-item > a:focus {
+  background-color: var(--accent-color);
+  fill: #FFFFFF;
+  border-radius: 50%;
 }
 
 
